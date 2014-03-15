@@ -1,12 +1,12 @@
 $(document).ready(function() {
     
-    // handle bila calcBtn diklik maka hitung berat ideal
+    // handle bila hitungBtn diklik maka hitung nilai rata - rata
     $('#hitungBtn').click(function() {
         var mtkNilai = parseFloat($('#mtkInput').val());
         var indoNilai = parseFloat($('#indoInput').val());
-        var ingNilai = parseFloat($('#ingrisInput').val());
+        var ingNilai = parseFloat($('#ingInput').val());
         var ipaNilai = parseFloat($('#ipaInput').val());
-        var nilaiRatarata = (mtkNilai + indoNilai + ingNilai + ipaNilai) / 4;
+        var nilaiRatarata = (mtkNilai+indoNilai+ingNilai+ipaNilai)/4;
         $('#nilaiRataBox').val(nilaiRatarata);
     });
     
